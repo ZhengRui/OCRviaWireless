@@ -54,4 +54,4 @@ there are many ways to connect to server through bluetooth, through specific uui
 To do:
 1, send ocr result back to mobile
 2, connect by wifi
-3, run image recogintion algorithm on server
+3, run image recognition algorithm on server
