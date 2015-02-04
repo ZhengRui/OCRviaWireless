@@ -2,7 +2,7 @@ Doing OCR on mobile(client) by connecting to computer(server)
 
 currently only using bluetooth
 
-Setting up on server:
+Setting up ocr libraries on server:
 
 1, Download links of tesseract3.03 and leptonica1.71 (ubuntu12.04 by default is tesseract3.02 and leptonica1.69)
 
@@ -45,15 +45,11 @@ last check it works
 
 $ python test-slim/test.py 
 
+if it works, then can start the ocr server on your laptop:
 
-Setting up on client:
+$ python rfcomm-server-sdp.py
 
-
-
-
-
-
-To do:
+there are many ways to connect to server through bluetooth, through specific uuid or through reflection, one important thing is at first i setup a random large port number on the server, then the mobile can find the server through uuid but just can not connect it, at last i found the reason is because the prot number in the server for that specific channel should be smaller than 30, i use 11 here.
 
 1, send ocr result back to mobile
 2, connect by wifi
