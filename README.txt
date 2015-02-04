@@ -51,6 +51,7 @@ $ python rfcomm-server-sdp.py
 
 there are many ways to connect to server through bluetooth, through specific uuid or through reflection, one important thing is at first i setup a random large port number on the server, then the mobile can find the server through uuid but just can not connect it, at last i found the reason is because the prot number in the server for that specific channel should be smaller than 30, i use 11 here.
 
+To do:
 1, send ocr result back to mobile
 2, connect by wifi
 3, run image recogintion algorithm on server
